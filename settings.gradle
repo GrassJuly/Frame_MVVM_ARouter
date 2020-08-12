@@ -1,0 +1,5 @@
+rootProject.name='wineworld'
+include ':app', ':frame'
+include ':library-base'
+include ':library-res'
+include ':module-home'

@@ -1,0 +1,36 @@
+项目须知
+
+光说理论没用，来点实际的东西，这里要提两个重要的框架。
+
+MVVMHabit：基于谷歌最新AAC架构，MVVM设计模式的一套快速开发库，整合Okhttp+RxJava+Retrofit+Glide等主流模块，满足日常开发需求。使用该框架可以快速开发一个高质量、易维护的Android应用。
+ARouter：阿里出的一个用于帮助 Android App 进行组件化改造的框架 —— 支持模块间的路由、通信、解耦。
+MVVMHabit + ARouter：MVVM模式 + 组件化方案，前者是设计模式，后者是方案架构，两者并用，相得益彰。有这两个框架作支撑，事半功倍，可快速开发组件化应用。
+
+该项目版本兼容范围：4.1以上
+项目应用架构：
+mvvm + rxjava + retrofit + okhttp + glade + kotlin
+开源库：
+mmkv + autosize + gson + bugly
+
+
+
+
+
+
+账号信息
+
+产品名称：京东酒世界APP-短信登录
+业务ID：1000370
+业务密钥：vsyja11x15q600zatizelq89467fc8l7
+公司：7fresh
+部门：7Fresh业务部
+申请时间2020-07-14 10:42:19
+备注：京东酒世界APP短信登录需要对接验证码
+
+产品名称：京东酒世界APP-账密登录
+业务ID：1000371
+业务密钥：13vjj3apb8htsdndwbtsusfj460gwsmy
+公司：7fresh
+部门：7Fresh业务部
+申请时间2020-07-14 10:40:48
+备注：京东酒世界APP账密登录对接验证码
