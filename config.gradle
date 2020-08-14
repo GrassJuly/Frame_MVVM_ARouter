@@ -37,8 +37,8 @@ ext {
     //依赖第三方配置
     dependencies = [
             //rxjava
-            "rxjava"                               : "io.reactivex.rxjava2:rxjava:2.2.3",
-            "rxandroid"                            : "io.reactivex.rxjava2:rxandroid:2.1.0",
+            "rxjava"                               : "io.reactivex:rxjava:1.1.6",
+            "rxandroid"                            : "io.reactivex:rxandroid:1.1.0",
             //rx系列与View生命周期同步
             "rxlifecycle"                          : "com.trello.rxlifecycle2:rxlifecycle:2.2.2",
             "rxlifecycle-components"               : "com.trello.rxlifecycle2:rxlifecycle-components:2.2.2",
@@ -48,10 +48,11 @@ ext {
 //            "rxpermissions"                        : "com.github.tbruyelle:rxpermissions:0.10.2",
             "rxpermissions"                        : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar",
             //network
-            "okhttp"                               : "com.squareup.okhttp3:okhttp:3.10.0",
-            "retrofit"                             : "com.squareup.retrofit2:retrofit:2.4.0",
-            "converter-gson"                       : "com.squareup.retrofit2:converter-gson:2.4.0",
-            "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava2:2.4.0",
+            "okhttp"                               : "com.squareup.okhttp3:okhttp:3.3.1",
+            "okhttp3-logging"                      : "com.squareup.okhttp3:logging-interceptor:3.3.1",
+            "retrofit"                             : "com.squareup.retrofit2:retrofit:2.0.0-beta4",
+            "converter-gson"                       : "com.squareup.retrofit2:converter-gson:2.0.0-beta4",
+            "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4",
             //glide图片加载
             "glide"                                : "com.github.bumptech.glide:glide:4.8.0",
             "glide-compiler"                       : "com.github.bumptech.glide:compiler:4.8.0",
@@ -68,6 +69,7 @@ ext {
             "lifecycle-compiler"                   : "android.arch.lifecycle:compiler:1.1.1",
             //MVVMHabit
             "MVVMHabit"                            : "com.github.goldze:MVVMHabit:3.1.4",
+            "klog"                                 : "com.github.zhaokaiqiang.klog:library:1.6.0",
             "autosize"                             : "me.jessyan:autosize:0.9.5",
             "mmkv"                                 : "com.tencent:mmkv:1.0.19",
             "multidex"                             : "com.android.support:multidex:1.0.3",

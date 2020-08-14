@@ -36,24 +36,24 @@ dependencies {
     //公用的support相关库在base中依赖
     api rootProject.ext.support["design"]
     api rootProject.ext.support["appcompat-v7"]
-    //support
-    implementation rootProject.ext.support["design"]
-    //下拉刷新,上拉加载
-    implementation 'com.lcodecorex:tkrefreshlayout:1.0.7'
-    //底部tabBar
-    implementation('me.majiajie:pager-bottom-tab-strip:2.2.5') {
-        exclude group: 'com.android.support'
-    }
-    //内存泄漏测试
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.2'
-    debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.2'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation(rootProject.ext.dependencies["autosize"])
-    implementation(rootProject.ext.dependencies["mmkv"])
-    implementation(rootProject.ext.dependencies["multidex"])
-    implementation(rootProject.ext.dependencies["crashreport"])
-    implementation(rootProject.ext.dependencies["nativecrashreport"])
-    implementation(rootProject.ext.dependencies["banner"])
+//    //support
+//    implementation rootProject.ext.support["design"]
+//    //下拉刷新,上拉加载
+//    implementation 'com.lcodecorex:tkrefreshlayout:1.0.7'
+//    //底部tabBar
+//    implementation('me.majiajie:pager-bottom-tab-strip:2.2.5') {
+//        exclude group: 'com.android.support'
+//    }
+//    //内存泄漏测试
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.2'
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.2'
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    implementation(rootProject.ext.dependencies["autosize"])
+//    implementation(rootProject.ext.dependencies["mmkv"])
+//    implementation(rootProject.ext.dependencies["multidex"])
+//    implementation(rootProject.ext.dependencies["crashreport"])
+//    implementation(rootProject.ext.dependencies["nativecrashreport"])
+//    implementation(rootProject.ext.dependencies["banner"])
     //公用资源在base中依赖
     api project(':frame')
     api project(':library-res')

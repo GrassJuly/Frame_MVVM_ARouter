@@ -52,8 +52,11 @@ android {
         api(rootProject.ext.dependencies.rxpermissions) {
             exclude group: 'com.android.support'
         }
+        //log
+        api rootProject.ext.dependencies.klog
         //network
         api rootProject.ext.dependencies.okhttp
+        api rootProject.ext.dependencies["okhttp3-logging"]
         api rootProject.ext.dependencies.retrofit
         api rootProject.ext.dependencies["converter-gson"]
         api rootProject.ext.dependencies["adapter-rxjava"]

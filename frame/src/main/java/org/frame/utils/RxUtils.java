@@ -6,8 +6,8 @@ import android.support.v4.app.Fragment;
 import com.trello.rxlifecycle2.LifecycleProvider;
 import com.trello.rxlifecycle2.LifecycleTransformer;
 
-import org.frame.http.BaseResponse;
-import org.frame.http.ExceptionHandle;
+import org.frame.http.net.BaseResponse;
+import org.frame.http.net.ExceptionHandle;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
@@ -94,7 +94,7 @@ public class RxUtils {
         public T apply(BaseResponse<T> response) {
             if (!response.isOk())
                 throw new RuntimeException(!"".equals(response.getCode() + "" + response.getMessage()) ? response.getMessage() : "");
-            return response.getResult();
+            return response.getData();
         }
     }
 

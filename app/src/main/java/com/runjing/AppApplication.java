@@ -1,5 +1,6 @@
 package com.runjing;
 
+import org.base.config.ModuleLifecycleConfig;
 import org.frame.base.BaseApplication;
 
 /**
@@ -15,9 +16,9 @@ public class AppApplication extends BaseApplication {
     public void onCreate() {
         super.onCreate();
         //初始化组件(靠前)
-//        ModuleLifecycleConfig.getInstance().initModuleAhead(this);
+        ModuleLifecycleConfig.getInstance().initModuleAhead(this);
 //        //....
-//        //初始化组件(靠后)
-//        ModuleLifecycleConfig.getInstance().initModuleLow(this);
+        //初始化组件(靠后)
+        ModuleLifecycleConfig.getInstance().initModuleLow(this);
     }
 }
