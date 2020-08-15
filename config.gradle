@@ -81,7 +81,7 @@ ext {
             "banner"                               : "com.youth.banner:banner:1.4.10",
             "smart-refresh"                        : "com.scwang.smart:refresh-layout-kernel:2.0.1",
             //阿里路由框架
-            "arouter-api"                          : "com.alibaba:arouter-api:1.4.1",
+            "arouter-api"                          : "com.alibaba:arouter-api:1.5.0",
             "arouter-compiler"                     : "com.alibaba:arouter-compiler:1.2.2",
     ]
 }

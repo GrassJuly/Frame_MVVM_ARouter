@@ -14,11 +14,12 @@ android {
         versionName rootProject.ext.android.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         //阿里路由框架配置
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = [AROUTER_MODULE_NAME: project.getName()]
-            }
-        }
+//        javaCompileOptions {
+//            annotationProcessorOptions {
+//                arguments = [AROUTER_MODULE_NAME: project.getName()]
+//            }
+//        }
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -49,7 +50,12 @@ android {
     }
 
 }
-
+kapt {
+    generateStubs = true
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //宿主项目中判断组件是否需要独立运行
@@ -68,9 +74,10 @@ dependencies {
         //订单模块
         implementation project(':module-order')
         //用户模块
-        implementation project(':module-mine')
+        implementation project(':module-user')
     }
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation(rootProject.ext.dependencies["multidex"])
 }
 repositories {
     mavenCentral()

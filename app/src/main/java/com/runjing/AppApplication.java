@@ -1,5 +1,7 @@
 package com.runjing;
 
+import android.content.Context;
+
 import org.base.config.ModuleLifecycleConfig;
 import org.frame.base.BaseApplication;
 
@@ -20,5 +22,11 @@ public class AppApplication extends BaseApplication {
 //        //....
         //初始化组件(靠后)
         ModuleLifecycleConfig.getInstance().initModuleLow(this);
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        android.support.multidex.MultiDex.install(this);
     }
 }

@@ -7,19 +7,19 @@ package org.base.config;
  */
 
 public class ModuleLifecycleReflexs {
-    private static final String BaseInit = "com.goldze.base.base.BaseModuleInit";
+    private static final String BaseInit = "org.base.base.BaseModuleInit";
     //主业务模块
-    private static final String MainInit = "com.goldze.main.MainModuleInit";
+    private static final String MainInit = "com.runjing.main.MainModuleInit";
     //登录验证模块
-    private static final String SignInit = "com.goldze.sign.SignModuleInit";
+    private static final String SignInit = "com.runjing.sign.SignModuleInit";
     //首页业务模块
-    private static final String HomeInit = "com.goldze.home.HomeModuleInit";
-    //工作业务模块
-    private static final String WorkInit = "com.goldze.work.WorkModuleInit";
-    //消息业务模块
-    private static final String MsgInit = "com.goldze.msg.MsgModuleInit";
+    private static final String HomeInit = "com.rujing.home.HomeModuleInit";
+    //分类业务模块
+    private static final String SortInit = "com.runjing.sort.SortModuleInit";
+    //订单业务模块
+    private static final String OrderInit = "com.runjing.order.OrderModuleInit";
     //用户业务模块
-    private static final String UserInit = "com.goldze.user.UserModuleInit";
+    private static final String UserInit = "com.runjing.user.UserModuleInit";
 
-    public static String[] initModuleNames = {BaseInit, MainInit,SignInit, HomeInit, WorkInit, MsgInit,UserInit};
+    public static String[] initModuleNames = {BaseInit, MainInit, SignInit, HomeInit, SortInit, OrderInit, UserInit};
 }

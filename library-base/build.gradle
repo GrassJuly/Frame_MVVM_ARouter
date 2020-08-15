@@ -50,7 +50,6 @@ dependencies {
 //    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 //    implementation(rootProject.ext.dependencies["autosize"])
 //    implementation(rootProject.ext.dependencies["mmkv"])
-//    implementation(rootProject.ext.dependencies["multidex"])
 //    implementation(rootProject.ext.dependencies["crashreport"])
 //    implementation(rootProject.ext.dependencies["nativecrashreport"])
 //    implementation(rootProject.ext.dependencies["banner"])
@@ -59,4 +58,7 @@ dependencies {
     api project(':library-res')
     //阿里路由框架
     api rootProject.ext.dependencies["arouter-api"]
+    api(rootProject.ext.dependencies["autosize"])
+    api(rootProject.ext.dependencies["mmkv"])
+    api(rootProject.ext.dependencies["crashreport"])
 }

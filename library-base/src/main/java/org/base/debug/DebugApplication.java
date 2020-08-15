@@ -1,6 +1,12 @@
 package org.base.debug;
 
 
+import com.socks.library.KLog;
+import com.tencent.bugly.crashreport.CrashReport;
+import com.tencent.mmkv.MMKV;
+
+import org.base.BuildConfig;
+import org.base.config.ModuleLifecycleConfig;
 import org.frame.base.BaseApplication;
 
 /**
@@ -13,9 +19,14 @@ public class DebugApplication extends BaseApplication {
     public void onCreate() {
         super.onCreate();
         //初始化组件(靠前)
-//        ModuleLifecycleConfig.getInstance().initModuleAhead(this);
+        ModuleLifecycleConfig.getInstance().initModuleAhead(this);
         //....
         //初始化组件(靠后)
-//        ModuleLifecycleConfig.getInstance().initModuleLow(this);
+        ModuleLifecycleConfig.getInstance().initModuleLow(this);
+        MMKV.initialize(this);
+        //线上检测
+        CrashReport.initCrashReport(getApplicationContext(), "92a7c20823", true);
+        KLog.init(BuildConfig.DEBUG, "wineworld :::::  ");
     }
+
 }

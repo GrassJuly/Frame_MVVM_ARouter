@@ -44,7 +44,6 @@ public class RetrofitClient {
     private File httpCacheDirectory;
 
 
-
     private static Retrofit.Builder builder =
             new Retrofit.Builder()
                     .addConverterFactory(GsonConverterFactory.create())
@@ -84,9 +83,9 @@ public class RetrofitClient {
         return new RetrofitClient(context, url, headers);
     }
 
-   private RetrofitClient() {
+    private RetrofitClient() {
 
-   }
+    }
 
     private RetrofitClient(Context context) {
 
@@ -104,7 +103,7 @@ public class RetrofitClient {
             url = baseUrl;
         }
 
-        if ( httpCacheDirectory == null) {
+        if (httpCacheDirectory == null) {
             httpCacheDirectory = new File(mContext.getCacheDir(), "wine_cache");
         }
 
@@ -137,7 +136,7 @@ public class RetrofitClient {
 
     }
 
-   /**
+    /**
      * ApiBaseUrl
      *
      * @param newApiBaseUrl
@@ -150,7 +149,7 @@ public class RetrofitClient {
     }
 
     /**
-     *addcookieJar
+     * addcookieJar
      */
     public static void addCookie() {
         okHttpClient.newBuilder().cookieJar(new NovateCookieManger(mContext)).build();
@@ -170,6 +169,7 @@ public class RetrofitClient {
 
     /**
      * create BaseApi  defalte ApiManager
+     *
      * @return ApiManager
      */
     public RetrofitClient createBaseApi() {
@@ -181,7 +181,7 @@ public class RetrofitClient {
      * create you ApiService
      * Create an implementation of the API endpoints defined by the {@code service} interface.
      */
-    public  <T> T create(final Class<T> service) {
+    public <T> T create(final Class<T> service) {
         if (service == null) {
             throw new RuntimeException("Api service is null!");
         }
@@ -231,7 +231,7 @@ public class RetrofitClient {
 
             @Override
             public Object call(Object observable) {
-                return ((Observable)  observable).subscribeOn(Schedulers.io())
+                return ((Observable) observable).subscribeOn(Schedulers.io())
                         .unsubscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread());
             }
@@ -276,7 +276,8 @@ public class RetrofitClient {
     private class HandleFuc<T> implements Func1<BaseResponse<T>, T> {
         @Override
         public T call(BaseResponse<T> response) {
-            if (!response.isOk()) throw new RuntimeException(response.getCode() + "" + response.getMessage() != null ? response.getMessage(): "");
+            if (!response.isOk())
+                throw new RuntimeException(response.getCode() + "" + response.getMessage() != null ? response.getMessage() : "");
             return response.getData();
         }
     }
@@ -286,15 +287,31 @@ public class RetrofitClient {
      * /**
      * execute your customer API
      * For example:
-     *  MyApiService service =
-     *      RetrofitClient.getInstance(MainActivity.this).create(MyApiService.class);
-     *
-     *  RetrofitClient.getInstance(MainActivity.this)
-     *      .execute(service.lgon("name", "password"), subscriber)
-     *     * @param subscriber
+     * MyApiService service =
+     * RetrofitClient.getInstance(MainActivity.this).create(MyApiService.class);
+     * <p>
+     * RetrofitClient.getInstance(MainActivity.this)
+     * .execute(service.lgon("name", "password"), subscriber)
+     * * @param subscriber
      */
 
-    public static <T> T execute(Observable<T> observable ,Subscriber<T> subscriber) {
+    public static <T> T execute1(Observable<T> observable, Subscriber<T> subscriber) {
+        observable.subscribeOn(Schedulers.io())
+                .unsubscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(subscriber);
+
+        return null;
+    }
+
+    /**
+     * TODO 后期调整
+     * @param observable
+     * @param subscriber
+     * @param <T>
+     * @return
+     */
+    public <T> T execute(Observable<T> observable, Subscriber<T> subscriber) {
         observable.subscribeOn(Schedulers.io())
                 .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -306,6 +323,7 @@ public class RetrofitClient {
 
     /**
      * DownSubscriber
+     *
      * @param <ResponseBody>
      */
     class DownSubscriber<ResponseBody> extends Subscriber<ResponseBody> {
