@@ -12,8 +12,17 @@ import com.runjing.home.databinding.FragmentHomeBinding
 import org.base.router.RouterFragmentPath
 import org.frame.base.BaseFragment
 
+/**
+ * @Created: qianxs  on 2020.08.13 19:45.
+ * @Describe：首页
+ * @Review：
+ * @Modify：
+ * @Version:  v_1.0 on 2020.08.13 19:45.
+ * @Remark:
+ */
 @Route(path = RouterFragmentPath.Home.PAGER_HOME)
 class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>() {
+
     override fun initContentView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): Int {
         return R.layout.fragment_home
     }
