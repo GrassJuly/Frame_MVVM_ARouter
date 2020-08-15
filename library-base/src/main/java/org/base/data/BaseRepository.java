@@ -13,6 +13,7 @@ import org.frame.base.BaseModel;
  */
 public class BaseRepository extends BaseModel implements LocalDataSource {
     private volatile static BaseRepository INSTANCE = null;
+    //这里只提供本地资源缓存， 网络资源那块抽离到各个模块当中
     private final HttpDataSource mHttpDataSource;
 
     private final LocalDataSource mLocalDataSource;
