@@ -13,7 +13,7 @@ public class RouterActivityPath {
     public static class Main {
         private static final String MAIN = "/main";
         /*主业务界面*/
-        public static final String PAGER_MAIN = MAIN +"/Main";
+        public static final String PAGER_MAIN = MAIN + "/Main";
     }
 
     /**
@@ -32,5 +32,10 @@ public class RouterActivityPath {
         private static final String USER = "/user";
         /*用户详情*/
         public static final String PAGER_USERDETAIL = USER + "/UserDetail";
+    }
+
+    public static class Local {
+        private static final String LOCAL = "/local";
+        public static final String PAGER_SEIZE = LOCAL + "/Seize";
     }
 }

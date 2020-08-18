@@ -25,6 +25,8 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), TabView
 
 
     override fun initContentView(savedInstanceState: Bundle?): Int {
+        StatusBarUtil.setColor(this, resources.getColor(R.color.color_F80000))
+        actionBar?.hide()
         return R.layout.activity_main
     }
 

@@ -7,7 +7,7 @@ android {
     defaultConfig {
         //如果是独立模块，则使用当前组件的包名
         if (isBuildModule.toBoolean()) {
-            applicationId "com.runjing.home"
+            applicationId "com.runjing.local"
         }
     }
     //统一资源前缀，规范资源引用
@@ -26,9 +26,6 @@ dependencies {
     //组件中依赖阿里路由编译框架
     kapt rootProject.ext.dependencies["arouter-compiler"]
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    //单组件依赖的第三方库，这里不能用implementation，否则宿主项目会因为databinding运行时不能找到第三方类报编译错误
-    //第三方底部Tabbar(这里要用api依赖, 不能用implementation，不然当宿主打包的时候自动生成的databinding无法编译该库的类
-    api 'me.majiajie:pager-bottom-tab-strip:2.2.2'
 }
 repositories {
     maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }

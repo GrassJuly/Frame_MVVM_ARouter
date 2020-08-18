@@ -9,11 +9,11 @@
 ext {
     //android开发版本配置
     android = [
-            compileSdkVersion: 28,
+            compileSdkVersion: 29,
             buildToolsVersion: "28.0.0",
             applicationId    : "com.runjing.wineworld",
             minSdkVersion    : 16,
-            targetSdkVersion : 28,
+            targetSdkVersion : 29,
             versionCode      : 1,
             versionName      : "1.0",
     ]
@@ -83,6 +83,10 @@ ext {
             //阿里路由框架
             "arouter-api"                          : "com.alibaba:arouter-api:1.5.0",
             "arouter-compiler"                     : "com.alibaba:arouter-compiler:1.2.2",
+            //高德地图
+            "3dmap"                                : "com.amap.api:navi-3dmap:latest.integration",
+            "location"                             : "com.amap.api:location:latest.integration",
+            "search"                               : "com.amap.api:search:latest.integration",
     ]
 }
 

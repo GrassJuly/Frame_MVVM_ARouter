@@ -75,6 +75,8 @@ dependencies {
         implementation project(':module-order')
         //用户模块
         implementation project(':module-user')
+        //地图定位模块
+        implementation project(':module-local')
     }
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation(rootProject.ext.dependencies["multidex"])

@@ -42,4 +42,13 @@ public class RouterFragmentPath {
         /*我的*/
         public static final String PAGER_MINE = USER + "/Mine";
     }
+
+    //地图组件
+    public static class Local {
+        private static final String LOCAL = "/local";
+        //定位
+        public static final String PAGER_LOCAL = LOCAL + "/Local";
+        //地图定位工具类
+        public static final String LOCAL_UTIL = LOCAL + "/LocalUtil";
+    }
 }

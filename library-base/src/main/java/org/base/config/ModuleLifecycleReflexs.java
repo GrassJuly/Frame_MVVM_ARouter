@@ -20,6 +20,8 @@ public class ModuleLifecycleReflexs {
     private static final String OrderInit = "com.runjing.order.OrderModuleInit";
     //用户业务模块
     private static final String UserInit = "com.runjing.user.UserModuleInit";
+    //地图定位模块
+    private static final String LocalInit = "com.runjing.local.LocalModuleInit";
 
-    public static String[] initModuleNames = {BaseInit, MainInit, SignInit, HomeInit, SortInit, OrderInit, UserInit};
+    public static String[] initModuleNames = {BaseInit, MainInit, SignInit, HomeInit, SortInit, OrderInit, UserInit, LocalInit};
 }
