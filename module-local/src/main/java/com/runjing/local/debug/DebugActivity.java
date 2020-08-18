@@ -3,11 +3,12 @@ package com.runjing.local.debug;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 
 import com.runjing.local.ui.LocalFragment;
 
 import org.frame.base.ContainerActivity;
+
+import androidx.annotation.Nullable;
 
 
 /**

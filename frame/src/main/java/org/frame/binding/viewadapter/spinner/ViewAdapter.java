@@ -1,6 +1,5 @@
 package org.frame.binding.viewadapter.spinner;
 
-import android.databinding.BindingAdapter;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,6 +10,8 @@ import org.frame.binding.command.BindingCommand;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.databinding.BindingAdapter;
 
 
 /**

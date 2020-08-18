@@ -1,11 +1,12 @@
 package org.frame.binding.viewadapter.radiogroup;
 
-import android.databinding.BindingAdapter;
-import android.support.annotation.IdRes;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import org.frame.binding.command.BindingCommand;
+
+import androidx.annotation.IdRes;
+import androidx.databinding.BindingAdapter;
 
 
 /**

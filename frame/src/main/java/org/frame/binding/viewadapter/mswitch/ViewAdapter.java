@@ -1,10 +1,11 @@
 package org.frame.binding.viewadapter.mswitch;
 
-import android.databinding.BindingAdapter;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import org.frame.binding.command.BindingCommand;
+
+import androidx.databinding.BindingAdapter;
 
 
 /**

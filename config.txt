@@ -12,6 +12,13 @@ mvvm + rxjava + retrofit + okhttp + glade + kotlin
 开源库：
 mmkv + autosize + gson + bugly
 
+v_1.0
+1. 项目集成ARouter框架
+2. 项目抽取主业务， 首页， 分类， 订单， 用户， 地图 组件
+3. 项目集成开源库 mmkv、高德、autosize、bugly、等开源库
+
+v_1.0.1
+1. 项目支持androidx, androidx版本兼容及适配
 
 
 

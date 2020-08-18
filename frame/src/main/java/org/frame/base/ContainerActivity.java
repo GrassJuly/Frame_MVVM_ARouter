@@ -2,9 +2,6 @@ package org.frame.base;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.WindowManager;
 
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
@@ -12,6 +9,10 @@ import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 import org.frame.R;
 
 import java.lang.ref.WeakReference;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 
 /**

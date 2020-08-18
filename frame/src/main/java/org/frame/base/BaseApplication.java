@@ -3,9 +3,10 @@ package org.frame.base;
 import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 
 import org.frame.utils.Utils;
+
+import androidx.annotation.NonNull;
 
 /**
  * Created by goldze on 2017/6/15.

@@ -1,9 +1,9 @@
 package com.runjing.main.ui
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.alibaba.android.arouter.launcher.ARouter
 import com.runjing.main.BR

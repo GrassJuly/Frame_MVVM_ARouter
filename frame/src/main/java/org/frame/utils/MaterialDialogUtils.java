@@ -3,7 +3,6 @@ package org.frame.utils;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.view.KeyEvent;
@@ -17,6 +16,8 @@ import com.afollestad.materialdialogs.Theme;
 import org.frame.R;
 
 import java.util.List;
+
+import androidx.annotation.NonNull;
 
 
 /**

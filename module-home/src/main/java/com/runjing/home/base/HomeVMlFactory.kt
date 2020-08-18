@@ -2,10 +2,8 @@ package com.runjing.home.base
 
 import android.annotation.SuppressLint
 import android.app.Application
-import android.arch.lifecycle.ViewModel
-import android.arch.lifecycle.ViewModelProvider.NewInstanceFactory
-import android.support.annotation.VisibleForTesting
-import com.runjing.home.http.HttpDataSourceImpl
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.runjing.home.ui.HomeViewModel
 
 /**
@@ -16,7 +14,7 @@ import com.runjing.home.ui.HomeViewModel
  * @Version:  v_1.0 on 2020.08.15 14:28.
  * @Remark:
  */
-class HomeVMlFactory private constructor(application: Application, repository: HomeRepository?): NewInstanceFactory() {
+class HomeVMlFactory private constructor(application: Application, repository: HomeRepository?): ViewModelProvider.NewInstanceFactory() {
 
     @SuppressLint("StaticFieldLeak")
     private var mApplication: Application = application

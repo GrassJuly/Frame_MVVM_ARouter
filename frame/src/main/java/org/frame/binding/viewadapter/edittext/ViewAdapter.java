@@ -1,13 +1,14 @@
 package org.frame.binding.viewadapter.edittext;
 
 import android.content.Context;
-import android.databinding.BindingAdapter;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 import org.frame.binding.command.BindingCommand;
+
+import androidx.databinding.BindingAdapter;
 
 /**
  * Created by goldze on 2017/6/16.

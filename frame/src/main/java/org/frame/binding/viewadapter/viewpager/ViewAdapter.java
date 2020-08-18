@@ -1,9 +1,10 @@
 package org.frame.binding.viewadapter.viewpager;
 
-import android.databinding.BindingAdapter;
-import android.support.v4.view.ViewPager;
 
 import org.frame.binding.command.BindingCommand;
+
+import androidx.databinding.BindingAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 
 /**

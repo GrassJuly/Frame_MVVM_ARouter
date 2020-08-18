@@ -1,11 +1,11 @@
 package org.base.data;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.VisibleForTesting;
-
 import org.base.data.source.HttpDataSource;
 import org.base.data.source.LocalDataSource;
 import org.frame.base.BaseModel;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 
 /**
  * MVVM的Model层，统一模块的数据仓库，包含网络数据和本地数据（一个应用可以有多个Repositor）

@@ -1,6 +1,6 @@
 package org.frame.base;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * ItemViewModel

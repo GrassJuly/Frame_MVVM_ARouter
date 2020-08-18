@@ -1,9 +1,9 @@
 package org.frame.binding.viewadapter.swiperefresh;
 
-import android.databinding.BindingAdapter;
-import android.support.v4.widget.SwipeRefreshLayout;
-
 import org.frame.binding.command.BindingCommand;
+
+import androidx.databinding.BindingAdapter;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 
 /**

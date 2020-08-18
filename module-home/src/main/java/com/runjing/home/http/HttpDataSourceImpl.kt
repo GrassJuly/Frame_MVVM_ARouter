@@ -1,17 +1,14 @@
 package com.runjing.home.http
 
 import android.content.Context
-import android.support.v4.app.Fragment
-import android.util.Log
-import com.runjing.home.bean.response.home.BannerBean
 import com.runjing.home.bean.response.home.DistrictBean
 import com.runjing.home.http.service.HomeApiService
-import com.socks.library.KLog
 import org.base.base.BCallBack
 import org.base.base.BaseRequest
 import org.base.data.source.http.service.ApiService
-import org.frame.http.net.*
-import rx.Subscriber
+import org.frame.http.net.BaseSubscriber
+import org.frame.http.net.ExceptionHandle
+import org.frame.http.net.RetrofitClient
 
 /**
  * @Created: qianxs  on 2020.08.15 19:39.

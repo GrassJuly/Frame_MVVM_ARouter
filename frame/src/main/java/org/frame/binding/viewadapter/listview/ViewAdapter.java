@@ -1,6 +1,5 @@
 package org.frame.binding.viewadapter.listview;
 
-import android.databinding.BindingAdapter;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
@@ -10,6 +9,7 @@ import org.frame.binding.command.BindingCommand;
 
 import java.util.concurrent.TimeUnit;
 
+import androidx.databinding.BindingAdapter;
 import io.reactivex.functions.Consumer;
 import io.reactivex.subjects.PublishSubject;
 

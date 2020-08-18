@@ -1,6 +1,5 @@
 package org.frame.binding.viewadapter.view;
 
-import android.databinding.BindingAdapter;
 import android.view.View;
 
 import com.jakewharton.rxbinding2.view.RxView;
@@ -9,6 +8,7 @@ import org.frame.binding.command.BindingCommand;
 
 import java.util.concurrent.TimeUnit;
 
+import androidx.databinding.BindingAdapter;
 import io.reactivex.functions.Consumer;
 
 /**

@@ -1,9 +1,9 @@
 package com.runjing.home.ui
 
-import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModelProviders
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.runjing.home.BR
 import com.runjing.home.R
