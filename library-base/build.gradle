@@ -68,11 +68,10 @@ dependencies {
     api(rootProject.ext.dependencies["mmkv"])
     /*异常抓取*/
     api(rootProject.ext.dependencies["crashreport"])
-    /*高德地图*/
-    api(rootProject.ext.dependencies["3dmap"])
-    api(rootProject.ext.dependencies["location"])
-    api(rootProject.ext.dependencies["search"])
     /*刷新加在控件*/
     api rootProject.ext.dependencies["smart-refresh"]
+    api rootProject.ext.dependencies["smartrefresh-header"]
+    /*65535*/
+    api(rootProject.ext.dependencies["multidex"])
 
 }

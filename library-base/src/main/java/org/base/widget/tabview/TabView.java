@@ -12,9 +12,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import org.runjing.rjframe.utils.DensityUtils;
 
 import org.base.R;
-import org.base.utils.DensityUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,7 +103,7 @@ public class TabView extends RelativeLayout {
         mTextViewUnSelColor = Color.rgb(129, 130, 149);
         mTabViewBackgroundColor = Color.rgb(255, 255, 255);
         viewBackgroundColor = Color.rgb(238, 238, 238);
-        mTabViewHeight = DensityUtils.dip2dp(context, 48);
+        mTabViewHeight = org.runjing.rjframe.utils.DensityUtils.dip2dp(context, 48);
         mImageViewTextViewMargin = DensityUtils.dip2dp(context, 2);
         mTextViewSize = DensityUtils.sp2px(context, 10);
         mImageViewWidth = DensityUtils.dip2dp(context, 20);

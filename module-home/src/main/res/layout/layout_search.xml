@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.runjing.home.ui.HomeViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_F80000"
+        android:gravity="center_horizontal"
+        onClickCommand="@{viewModel.onSearch}">
+
+        <LinearLayout
+            android:id="@+id/lay_ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_36"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/style_radius_bg_white"
+            android:focusable="false"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:src="@mipmap/icon_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_2"
+                    android:text="@string/home_search_msg"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

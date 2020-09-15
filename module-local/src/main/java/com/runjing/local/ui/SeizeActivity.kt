@@ -1,9 +1,8 @@
 package com.runjing.local.ui
 
+import android.app.Activity
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.alibaba.android.arouter.facade.annotation.Route
-import com.runjing.local.utils.LocalUtil
 import org.base.router.RouterActivityPath
 
 /**
@@ -15,10 +14,11 @@ import org.base.router.RouterActivityPath
  * @Remark:
  */
 @Route(path = RouterActivityPath.Local.PAGER_SEIZE)
-class SeizeActivity : AppCompatActivity() {
+class SeizeActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        LocalUtil.getInstance().initMap(this)
     }
+
+
 }

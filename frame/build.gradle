@@ -81,6 +81,10 @@ android {
         api(rootProject.ext.dependencies["bindingcollectionadapter-recyclerview"]) {
             exclude group: 'com.android.support'
         }
+        /*刷新加在控件*/
+        api rootProject.ext.dependencies["smart-refresh"]
+        api rootProject.ext.dependencies["smartrefresh-header"]
+
         //Google LiveData和ViewModel组件
         api rootProject.ext.dependencies["lifecycle-extensions"]
         annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]

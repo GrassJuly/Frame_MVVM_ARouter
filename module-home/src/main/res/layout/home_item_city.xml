@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_item_tv_"
+    android:layout_width="@dimen/dp_110"
+    android:layout_height="@dimen/dp_32"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/style_r_5_bg_fff_f80000"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:singleLine="true"
+    android:text="@string/app_default"
+    android:textColor="@color/color_ff333333"
+    android:textSize="@dimen/sp_14" />

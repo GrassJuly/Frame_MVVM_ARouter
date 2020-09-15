@@ -12,9 +12,10 @@ import java.util.List;
  */
 public class HomeStoreBean {
 
+
     /**
      * code : 200
-     * data : {"freshStoreVOList":[{"addressDetail":"北京市大兴区兴政街15号","distance":"230.00","freshShopType":6,"id":132916,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"39.724926","longitude":"116.340474","name":"倩倩","openTimeEnd":"23:00","openTimeStart":"09:00","shopMap":"","status":1,"storeType":7},{"addressDetail":"河南省洛阳市长安小区12号","distance":"17930.00","freshShopType":6,"id":132833,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"39.822036","longitude":"116.510971","name":"普通门店1","openTimeEnd":"22:00","openTimeStart":"10:00","shopMap":"","status":1,"storeType":0},{"addressDetail":"马驹桥镇","distance":"21060.00","freshShopType":1,"id":132850,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"39.876557","longitude":"116.492686","name":"旗舰店2","openTimeEnd":"22:00","openTimeStart":"10:00","shopMap":"","status":1,"storeType":7},{"addressDetail":"郑州站","distance":"602510.00","freshShopType":6,"id":131667,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"34.745681","longitude":"113.658581","name":"得辉商行","openTimeEnd":"22:00","openTimeStart":"08:00","shopMap":"","status":1,"storeType":6},{"addressDetail":"郑州站","distance":"602510.00","freshShopType":6,"id":131666,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"34.745681","longitude":"113.658581","name":"郑州门店1122","openTimeEnd":"22:00","openTimeStart":"10:00","shopMap":"","status":1,"storeType":6},{"addressDetail":"宝安国际机场","distance":"1916410.00","freshShopType":6,"id":131684,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"22.630293","longitude":"113.812265","name":"苏苏深圳测试门店1","openTimeEnd":"23:00","openTimeStart":"09:00","shopMap":"","status":1,"storeType":0},{"addressDetail":"北京市大兴区荣华南路","distance":"1921560.00","freshShopType":6,"id":131335,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"22.551682","longitude":"114.135625","name":"测试密码","openTimeEnd":"23:00","openTimeStart":"09:00","shopMap":"","status":1,"storeType":0}],"type":2}
+     * data : {"freshStoreVOList":[{"addressDetail":"北京市朝阳区吉庆里14号楼1层101内C","distance":"720.00","freshShopType":6,"id":131422,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"39.927925","longitude":"116.440563","name":"京东酒世界仟禧名酒行","openTimeEnd":"23:30","openTimeStart":"09:00","shopMap":"","status":2,"storeType":0},{"addressDetail":"北京市东城区国瑞城中区9号楼1层107","distance":"3020.00","freshShopType":6,"id":131423,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"39.898772","longitude":"116.424899","name":"京东酒世界顺雅华盛（国瑞城店）","openTimeEnd":"23:30","openTimeStart":"09:00","shopMap":"","status":2,"storeType":0}],"type":1}
      */
 
     private int code;
@@ -38,8 +39,8 @@ public class HomeStoreBean {
 
     public static class DataBean {
         /**
-         * freshStoreVOList : [{"addressDetail":"北京市大兴区兴政街15号","distance":"230.00","freshShopType":6,"id":132916,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"39.724926","longitude":"116.340474","name":"倩倩","openTimeEnd":"23:00","openTimeStart":"09:00","shopMap":"","status":1,"storeType":7},{"addressDetail":"河南省洛阳市长安小区12号","distance":"17930.00","freshShopType":6,"id":132833,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"39.822036","longitude":"116.510971","name":"普通门店1","openTimeEnd":"22:00","openTimeStart":"10:00","shopMap":"","status":1,"storeType":0},{"addressDetail":"马驹桥镇","distance":"21060.00","freshShopType":1,"id":132850,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"39.876557","longitude":"116.492686","name":"旗舰店2","openTimeEnd":"22:00","openTimeStart":"10:00","shopMap":"","status":1,"storeType":7},{"addressDetail":"郑州站","distance":"602510.00","freshShopType":6,"id":131667,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"34.745681","longitude":"113.658581","name":"得辉商行","openTimeEnd":"22:00","openTimeStart":"08:00","shopMap":"","status":1,"storeType":6},{"addressDetail":"郑州站","distance":"602510.00","freshShopType":6,"id":131666,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"34.745681","longitude":"113.658581","name":"郑州门店1122","openTimeEnd":"22:00","openTimeStart":"10:00","shopMap":"","status":1,"storeType":6},{"addressDetail":"宝安国际机场","distance":"1916410.00","freshShopType":6,"id":131684,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"22.630293","longitude":"113.812265","name":"苏苏深圳测试门店1","openTimeEnd":"23:00","openTimeStart":"09:00","shopMap":"","status":1,"storeType":0},{"addressDetail":"北京市大兴区荣华南路","distance":"1921560.00","freshShopType":6,"id":131335,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"22.551682","longitude":"114.135625","name":"测试密码","openTimeEnd":"23:00","openTimeStart":"09:00","shopMap":"","status":1,"storeType":0}]
-         * type : 2
+         * freshStoreVOList : [{"addressDetail":"北京市朝阳区吉庆里14号楼1层101内C","distance":"720.00","freshShopType":6,"id":131422,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"39.927925","longitude":"116.440563","name":"京东酒世界仟禧名酒行","openTimeEnd":"23:30","openTimeStart":"09:00","shopMap":"","status":2,"storeType":0},{"addressDetail":"北京市东城区国瑞城中区9号楼1层107","distance":"3020.00","freshShopType":6,"id":131423,"image":"https://img.jd9sj.com/WechatIMG418.jpeg","latitude":"39.898772","longitude":"116.424899","name":"京东酒世界顺雅华盛（国瑞城店）","openTimeEnd":"23:30","openTimeStart":"09:00","shopMap":"","status":2,"storeType":0}]
+         * type : 1
          */
 
         private int type;
@@ -61,29 +62,21 @@ public class HomeStoreBean {
             this.freshStoreVOList = freshStoreVOList;
         }
 
-        @Override
-        public String toString() {
-            return "DataBean{" +
-                    "type=" + type +
-                    ", freshStoreVOList=" + freshStoreVOList +
-                    '}';
-        }
-
         public static class FreshStoreVOListBean {
             /**
-             * addressDetail : 北京市大兴区兴政街15号
-             * distance : 230.00
+             * addressDetail : 北京市朝阳区吉庆里14号楼1层101内C
+             * distance : 720.00
              * freshShopType : 6
-             * id : 132916
+             * id : 131422
              * image : https://img.jd9sj.com/WechatIMG418.jpeg
-             * latitude : 39.724926
-             * longitude : 116.340474
-             * name : 倩倩
-             * openTimeEnd : 23:00
+             * latitude : 39.927925
+             * longitude : 116.440563
+             * name : 京东酒世界仟禧名酒行
+             * openTimeEnd : 23:30
              * openTimeStart : 09:00
              * shopMap :
-             * status : 1
-             * storeType : 7
+             * status : 2
+             * storeType : 0
              */
 
             private String addressDetail;
@@ -222,6 +215,14 @@ public class HomeStoreBean {
                         ", storeType=" + storeType +
                         '}';
             }
+        }
+
+        @Override
+        public String toString() {
+            return "DataBean{" +
+                    "type=" + type +
+                    ", freshStoreVOList=" + freshStoreVOList +
+                    '}';
         }
     }
 

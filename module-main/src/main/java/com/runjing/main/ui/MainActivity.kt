@@ -11,6 +11,8 @@ import com.runjing.main.R
 import com.runjing.main.databinding.ActivityMainBinding
 import org.base.router.RouterActivityPath
 import org.base.router.RouterFragmentPath
+import org.base.router.RouterServicePath
+import org.base.services.RouteService
 import org.base.widget.tabview.TabView
 import org.base.widget.tabview.TabViewChild
 import org.frame.base.BaseActivity
@@ -25,8 +27,6 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), TabView
 
 
     override fun initContentView(savedInstanceState: Bundle?): Int {
-        StatusBarUtil.setColor(this, resources.getColor(R.color.color_F80000))
-        actionBar?.hide()
         return R.layout.activity_main
     }
 

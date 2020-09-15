@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <attr name="HomeToolBarColor" format="color" />
+    <attr name="DetailToolBarColor" format="color" />
+
     <declare-styleable name="TabView">
         <attr name="tab_textViewSelColor" format="reference|color" />
         <attr name="tab_textViewUnSelColor" format="reference|color" />

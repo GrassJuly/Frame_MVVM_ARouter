@@ -28,5 +28,4 @@ public class ViewAdapter {
     public static void setRefreshing(SwipeRefreshLayout swipeRefreshLayout, boolean refreshing) {
         swipeRefreshLayout.setRefreshing(refreshing);
     }
-
 }

@@ -1,5 +1,7 @@
 package org.base.data;
 
+import android.text.TextUtils;
+
 import org.base.data.source.HttpDataSource;
 import org.base.data.source.LocalDataSource;
 import org.frame.base.BaseModel;
@@ -62,4 +64,86 @@ public class BaseRepository extends BaseModel implements LocalDataSource {
         return mLocalDataSource.getPassword();
     }
 
+    @Override
+    public void setPhone(String phone) {
+        mLocalDataSource.setPhone(phone);
+    }
+
+    @Override
+    public void setCurAddress(String address) {
+        mLocalDataSource.setCurAddress(address);
+    }
+
+    @Override
+    public void setCurLon(String lon) {
+        mLocalDataSource.setCurLon(lon);
+    }
+
+    @Override
+    public void setCurLat(String lat) {
+        mLocalDataSource.setCurLat(lat);
+    }
+
+    @Override
+    public String getPhone() {
+        return mLocalDataSource.getPhone();
+    }
+
+    @Override
+    public String getAddress() {
+        if (TextUtils.isEmpty(mLocalDataSource.getAddress())) {
+            return "无法获取地址";
+        }
+        return mLocalDataSource.getAddress();
+    }
+
+    @Override
+    public String getCurAddress() {
+        return mLocalDataSource.getCurAddress();
+    }
+
+    @Override
+    public String getLon() {
+        return mLocalDataSource.getLon();
+    }
+
+    @Override
+    public String getLat() {
+        return mLocalDataSource.getLat();
+    }
+
+    @Override
+    public String getCurLon() {
+        return mLocalDataSource.getCurLon();
+    }
+
+    @Override
+    public String getCurLat() {
+        return mLocalDataSource.getCurLat();
+    }
+
+    @Override
+    public void setGuild(String guild) {
+        mLocalDataSource.setGuild(guild);
+    }
+
+    @Override
+    public String getGuild() {
+        return mLocalDataSource.getGuild();
+    }
+
+    @Override
+    public void setPin(String pin) {
+        mLocalDataSource.setPin(pin);
+    }
+
+    @Override
+    public String getPin() {
+        return mLocalDataSource.getPin();
+    }
+
+    @Override
+    public String getCity() {
+        return mLocalDataSource.getCity();
+    }
 }

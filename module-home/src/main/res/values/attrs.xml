@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="home_banner">
+        <attr name="home_owner" format="reference"/>
+        <attr name="home_images" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="home_recycler" >
+        <attr name="home_data" format="reference"/>
+    </declare-styleable>
+
+</resources>

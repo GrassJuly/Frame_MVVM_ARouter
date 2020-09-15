@@ -25,7 +25,10 @@ dependencies {
     api project(':library-base')
     //组件中依赖阿里路由编译框架
     kapt rootProject.ext.dependencies["arouter-compiler"]
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version" /*高德地图*/
+    api(rootProject.ext.dependencies["3dmap"])
+    api(rootProject.ext.dependencies["location"])
+    api(rootProject.ext.dependencies["search"])
 }
 repositories {
     maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }

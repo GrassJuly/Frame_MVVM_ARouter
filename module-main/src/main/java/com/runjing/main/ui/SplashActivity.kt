@@ -1,9 +1,16 @@
 package com.runjing.main.ui
 
+import android.app.AlarmManager
+import android.app.Application
+import android.app.PendingIntent
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.alibaba.android.arouter.launcher.ARouter
+import org.base.router.RouterServicePath
+import org.base.services.RouteService
 import org.frame.utils.StatusBarUtil
 
 /**
@@ -28,5 +35,4 @@ class SplashActivity : AppCompatActivity() {
         startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
-
 }

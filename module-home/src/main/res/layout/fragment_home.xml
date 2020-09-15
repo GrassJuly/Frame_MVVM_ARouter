@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://schemas.android.com/tools">
 
     <data>
         <variable
@@ -7,22 +8,110 @@
             type="com.runjing.home.ui.HomeViewModel" />
     </data>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <FrameLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.HomeFragment">
+        android:layout_height="fill_parent"
+        android:background="@color/color_f1f1f1">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/fragt_ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
 
-    </LinearLayout>
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/frag_srl_content"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/color_f1f1f1"
+                app:onRefreshCallBack="@{viewModel.onRefresh}"
+                app:onLoadMoreCallBack="@{viewModel.onLoadMore}">
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.appbar.AppBarLayout
+                        android:id="@+id/frag_al_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="?attr/HomeToolBarColor">
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:contentInsetStart="@dimen/dp_0"
+                            app:layout_scrollFlags="scroll|enterAlways">
+
+                            <include layout="@layout/layout_titlebar_local"
+                                app:viewModel="@{viewModel}"/>
+
+                        </androidx.appcompat.widget.Toolbar>
+                    </com.google.android.material.appbar.AppBarLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/frag_fl_conntent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        app:layout_constraintLeft_toLeftOf="@id/frag_al_title"
+                        app:layout_constraintTop_toBottomOf="@id/frag_al_title">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:id="@+id/frg_sv_contennt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <include
+                                    android:id="@+id/frg_ll_home"
+                                    layout="@layout/layout_home"
+                                    android:visibility="visible"
+                                    app:viewModel="@{viewModel}"/>
+
+                            </LinearLayout>
+                        </androidx.core.widget.NestedScrollView>
+
+                        <include
+                            android:id="@+id/frag_ll_search"
+                            layout="@layout/layout_search"
+                            app:viewModel="@{viewModel}" />
+
+                    </FrameLayout>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frag_ll_localNet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_home_title_local" />
+
+            <include
+                android:id="@+id/frg_ll_nonet"
+                layout="@layout/layout_no_network"
+                android:visibility="gone" />
+            <!--没有定位权限-->
+            <include
+                android:id="@+id/frg_ll_nolocal"
+                layout="@layout/layout_home_local"
+                android:visibility="visible" />
+        </LinearLayout>
+    </FrameLayout>
 
 </layout>

@@ -1,6 +1,9 @@
 package org.base.base;
 
 
+import org.base.config.Appconfig;
+import org.base.utils.MMKVUtil;
+
 /**
  * @Created by xiaoyu on 2017/1/6.
  * @Describe：公共请求Bean
@@ -18,23 +21,16 @@ public class BaseRequest {
     private String longitude;
     private String currentLat;
     private String currentLon;
-    private int pageSize;
-    private int pageNo;
-    private String platformType;
+//    private String platformType;
 
     public BaseRequest() {
-//        this.latitude = LocalUtil.lat;
-//        if (TextUtils.isEmpty(LocalUtil.lat)) {
-//            this.latitude = MMKVUtil.getInstance().decodeDouble(Appconfig.lat) + "";
-//        }
-//        longitude = LocalUtil.lon;
-//        if (TextUtils.isEmpty(LocalUtil.lon)) {
-//            this.longitude = MMKVUtil.getInstance().decodeDouble(Appconfig.lon) + "";
-//        }
-//        this.currentLat = LocalUtil.currentLat;
-//        this.currentLon = LocalUtil.currentLon;
-//        this.appVersion = SystemTool.getAppVersionName(MyApplication.contextApp);
-        platformType = "4";
+//        this.latitude =  "39.9219";
+        this.latitude = MMKVUtil.getInstance().decodeDouble(Appconfig.lat) + "";
+//        this.longitude =  "116.44355";
+        this.longitude = MMKVUtil.getInstance().decodeDouble(Appconfig.lon) + "";
+        this.currentLat = MMKVUtil.getInstance().decodeDouble(Appconfig.currentlat) + "";
+        this.currentLon = MMKVUtil.getInstance().decodeDouble(Appconfig.currentlon) + "";
+//        platformType = "4";
     }
 
     public String getPhonemodel() {
@@ -43,14 +39,6 @@ public class BaseRequest {
 
     public void setPhonemodel(String phonemodel) {
         this.phonemodel = phonemodel;
-    }
-
-    public int getPageSize() {
-        return pageSize;
-    }
-
-    public void setPageSize(int pageSize) {
-        this.pageSize = pageSize;
     }
 
     public String getDeviceId() {
@@ -93,14 +81,6 @@ public class BaseRequest {
         this.longitude = longitude;
     }
 
-    public int getPageNo() {
-        return pageNo;
-    }
-
-    public void setPageNo(int pageNo) {
-        this.pageNo = pageNo;
-    }
-
     public String getCurrentLat() {
         return currentLat;
     }
@@ -117,13 +97,13 @@ public class BaseRequest {
         this.currentLon = currentLon;
     }
 
-    public String getPlatformType() {
-        return platformType;
-    }
+//    public String getPlatformType() {
+//        return platformType;
+//    }
 
-    public void setPlatformType(String platformType) {
-        this.platformType = platformType;
-    }
+//    public void setPlatformType(String platformType) {
+//        this.platformType = platformType;
+//    }
 
     @Override
     public String toString() {
@@ -136,9 +116,7 @@ public class BaseRequest {
                 ", longitude='" + longitude + '\'' +
                 ", currentLat='" + currentLat + '\'' +
                 ", currentLon='" + currentLon + '\'' +
-                ", pageSize=" + pageSize +
-                ", pageNo=" + pageNo +
-                ", platformType='" + platformType + '\'' +
+//                ", platformType='" + platformType + '\'' +
                 '}';
     }
 }

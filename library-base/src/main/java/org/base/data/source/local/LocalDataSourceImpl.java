@@ -1,6 +1,8 @@
 package org.base.data.source.local;
 
+import org.base.config.Appconfig;
 import org.base.data.source.LocalDataSource;
+import org.base.utils.SpUtil;
 import org.frame.utils.SPUtils;
 
 /**
@@ -31,21 +33,103 @@ public class LocalDataSourceImpl implements LocalDataSource {
 
     @Override
     public void saveUserName(String userName) {
-        SPUtils.getInstance().put("UserName", userName);
+        SpUtil.INSTANCE.encode(Appconfig.User, userName);
     }
 
     @Override
     public void savePassword(String password) {
-        SPUtils.getInstance().put("password", password);
+        SpUtil.INSTANCE.encode(Appconfig.PassWord, password);
     }
 
     @Override
     public String getUserName() {
-        return SPUtils.getInstance().getString("UserName");
+        return SpUtil.INSTANCE.decodeString(Appconfig.User);
     }
 
     @Override
     public String getPassword() {
-        return SPUtils.getInstance().getString("password");
+        return SpUtil.INSTANCE.decodeString(Appconfig.User);
+    }
+
+    @Override
+    public void setPhone(String phone) {
+        SpUtil.INSTANCE.encode(Appconfig.Phone, phone);
+    }
+
+    @Override
+    public void setCurAddress(String address) {
+        SpUtil.INSTANCE.encode(Appconfig.CurAddress, address);
+    }
+
+    @Override
+    public void setCurLon(String lon) {
+        SpUtil.INSTANCE.encode(Appconfig.currentlon, lon);
+    }
+
+    @Override
+    public void setCurLat(String lat) {
+        SpUtil.INSTANCE.encode(Appconfig.currentlat, lat);
+    }
+
+    @Override
+    public String getPhone() {
+        return SpUtil.INSTANCE.decodeString(Appconfig.Phone);
+    }
+
+    @Override
+    public String getAddress() {
+        return SpUtil.INSTANCE.decodeString(Appconfig.address);
+
+    }
+
+    @Override
+    public String getCurAddress() {
+        return SpUtil.INSTANCE.decodeString(Appconfig.CurAddress);
+    }
+
+    @Override
+    public String getLon() {
+        return SpUtil.INSTANCE.decodeString(Appconfig.lon);
+    }
+
+    @Override
+    public String getLat() {
+        return SpUtil.INSTANCE.decodeString(Appconfig.lat);
+    }
+
+    @Override
+    public String getCurLon() {
+        return SpUtil.INSTANCE.decodeString(Appconfig.currentlon);
+    }
+
+    @Override
+    public String getCurLat() {
+        return SpUtil.INSTANCE.decodeString(Appconfig.currentlat);
+    }
+
+    @Override
+    public void setGuild(String guild) {
+        SpUtil.INSTANCE.encode(Appconfig.IS_GUILD, guild);
+
+    }
+
+    @Override
+    public String getGuild() {
+        return SpUtil.INSTANCE.decodeString(Appconfig.IS_GUILD);
+    }
+
+    @Override
+    public void setPin(String pin) {
+        SpUtil.INSTANCE.encode(Appconfig.JDPin, pin);
+    }
+
+    @Override
+    public String getPin() {
+        return SpUtil.INSTANCE.decodeString(Appconfig.JDPin);
+    }
+
+    @Override
+    public String getCity() {
+        return SpUtil.INSTANCE.decodeString(Appconfig.city);
     }
 }

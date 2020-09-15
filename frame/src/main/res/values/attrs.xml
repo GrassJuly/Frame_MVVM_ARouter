@@ -97,6 +97,11 @@
         <attr name="itemBinding" format="reference" />
         <attr name="layoutManager" format="reference" />
         <attr name="itemAnimator" format="reference" />
+        <attr name="hasFixedSize" format="boolean"/>
+        <attr name="mangerType" format="integer"/>
+        <attr name="typeNum" format="integer"/>
+        <attr name="orientation" format="integer"/>
+        <attr name="itemDecSize" format="integer"/>
     </declare-styleable>
     <declare-styleable name="RadioGroup">
         <attr name="onCheckedChangedCommand" format="reference" />
@@ -159,6 +164,13 @@
         <attr name="refreshing" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="SmartRefreshLayout">
+        <attr name="onRefreshCallBack" format="reference"></attr>
+        <attr name="refreshAble" format="boolean"></attr>
+        <attr name="onLoadMoreCallBack" format="reference"></attr>
+        <attr name="loadMoreAble" format="boolean"></attr>
+    </declare-styleable>
+
     <declare-styleable name="WebView">
         <!-- require String render to html show in webview-->
         <attr name="render" format="string" />
@@ -167,4 +179,5 @@
     <declare-styleable name="ControlDistributeLinearLayout">
         <attr name="distribute_event" format="boolean" />
     </declare-styleable>
+
 </resources>

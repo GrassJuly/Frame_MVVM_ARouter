@@ -32,7 +32,6 @@ public abstract class BaseFragment<V extends ViewDataBinding, VM extends BaseVie
     protected V binding;
     protected VM viewModel;
     private int viewModelId;
-    //TODO 原型订完 后期调整
     private MaterialDialog dialog;
 
     @Override
